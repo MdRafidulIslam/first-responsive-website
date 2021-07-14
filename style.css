@@ -1,3 +1,78 @@
-h1 {
-  color: red;
+/* font-family */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Banner part design */
+.container {
+  width: 1440px;
+  height: 677px;
+}
+
+.top-banner {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 107px;
+}
+
+.banner-text h1 {
+  width: 485px;
+  height: 230px;
+  color: white;
+  font-weight: bold;
+  font-size: 64px;
+}
+.banner-img img {
+  width: 556.01px;
+  height: 438px;
+}
+
+.text-part {
+  margin-left: 156px;
+  margin-top: 207px;
+  margin-bottom: 240px;
+}
+
+.img-part {
+  margin-top: 153px;
+  margin-right: 141px;
+  margin-bottom: 86px;
+}
+button {
+  width: 168px;
+  height: 44px;
+  padding: 10px 24px;
+  margin-top: 27px;
+  background: #e02c6d;
+  color: whitesmoke;
+}
+
+/* Player introduction part design */
+
+.container2 {
+  width: 1050px;
+  height: 474px;
+}
+
+.player-img img {
+  width: 300px;
+  height: 256px;
+}
+
+.player-intro h3 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.player {
+  width: 330px;
+  height: 474px;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.players {
+  margin-left: 180px;
 }
