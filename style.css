@@ -27,6 +27,11 @@ body {
 .banner-img img {
   width: 556.01px;
   height: 438px;
+  transition: transform 5s;
+}
+
+.banner-img img:hover {
+  transform: rotate(45deg);
 }
 
 .text-part {
@@ -47,13 +52,22 @@ button {
   margin-top: 27px;
   background: #e02c6d;
   color: whitesmoke;
+  transition: transform 5s;
+}
+
+button:hover {
+  transform: scale(2);
 }
 
 /* Player introduction part design */
+main {
+}
 
 .container2 {
   width: 1050px;
   height: 474px;
+  margin-top: 70px;
+  margin-right: 210px;
 }
 
 .player-img img {
@@ -74,5 +88,50 @@ button {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .players {
-  margin-left: 180px;
+  margin: 270px 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 37px;
+  grid-row-gap: 27px;
+}
+
+/* footer part design */
+footer {
+  margin-top: 1742px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img img {
+  width: 483.87px;
+  height: 110px;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  background: #969bab;
+  margin: 0px 14px;
+}
+
+/* Media Quary*/
+
+/*Mobile Device*/
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+
+  .top-banner,
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .players,
+  .text-part,
+  .img-part {
+    flex-direction: column;
+  }
 }
